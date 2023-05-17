@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
+      //实际的路径转换 @ -> src
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   }
